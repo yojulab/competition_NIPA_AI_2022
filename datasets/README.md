@@ -20,3 +20,29 @@
         }]
 }
 ```
+Output
+각 질문의 답 (텍스트)
+
+Submission 양식
+```
+question_id, answer_text
+QUES_xxxxxxxxxx, ans
+QUES_xxxxxxxxxx, ans
+QUES_xxxxxxxxxx, ans
+QUES_xxxxxxxxxx, ans
+QUES_xxxxxxxxxx, ans
+...
+```
+✔ sample_submission과 같은 형태의 csv(utf8) 파일 1개를 제출 (sample_submission.csv는 대회 시작 때 제공)
+
+✔ 'question_id', 'answer_text' 두 가지 column이 필요함
+
+- 'question_id' : 질문의 고유번호
+
+- 'answer_text' : 질문에 대한 답 문자열
+
+✔ 제출 파일의 question_id 순서가 sample submission.csv와 동일해야 함
+
+✔ 제출 파일에 누락된 question_id가 없어야 함
+
+✔ 정답 텍스트에서 띄어쓰기는 고려하지 않고 채점함
