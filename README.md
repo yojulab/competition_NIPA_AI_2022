@@ -1,0 +1,1 @@
+# competition_NIPA_AI_2022
