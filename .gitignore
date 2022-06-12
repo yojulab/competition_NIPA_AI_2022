@@ -130,3 +130,5 @@ dmypy.json
 korBert/
 **/.DS_Store
 *.zip
+datasets/*.pt
+models/baseline/**/*.yml
