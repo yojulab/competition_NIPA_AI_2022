@@ -1,8 +1,10 @@
 DIRECTORY:
-  dataset: path_to_test.json_and_sample_submission
+  # dataset: path_to_test.json_and_sample_submission
+  dataset: /Users/sanghunoh/Develops/repository/projects/competition_NIPA_AI_2022/datasets/
 
 TRAIN:
-  train_serial: 'YYYYMMDD_SERIAL'
+  # train_serial: "YYYYMMDD_SERIAL" # YYYYMMDD_SERIAL is train folder by creating training
+  train_serial: "20220612_115012"
 
 PREDICT:
   seed: 42

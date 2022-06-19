@@ -1,9 +1,10 @@
 DIRECTORY:
-  dataset: path_to_train.json
+  # dataset: path_to_train.json
+  dataset: /Users/sanghunoh/Develops/repository/projects/competition_NIPA_AI_2022/datasets/
 
 AUGMENTATION:
-  
-TRAINER :
+
+TRAINER:
   debug: False
   tokenizer: ElectraTokenizerFast
   model: electra

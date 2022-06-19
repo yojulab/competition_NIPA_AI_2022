@@ -1,6 +1,30 @@
-# competition_NIPA_AI_2022 : https://aichallenge.or.kr/
-https://www.tensorflow.org/hub/tutorials/retrieval_with_tf_hub_universal_encoder_qa
+## competition_NIPA_AI_2022 : https://aichallenge.or.kr/
++ https://www.tensorflow.org/hub/tutorials/retrieval_with_tf_hub_universal_encoder_qa
++ https://www.tensorflow.org/text/tutorials/uncertainty_quantification_with_sngp_bert
++ http://aiopen.etri.re.kr/aidata_download.php
 
-https://www.tensorflow.org/text/tutorials/uncertainty_quantification_with_sngp_bert
+### 사용 설명서 
++ 주 코드 폴더 : ./models/baseline
++ dataset
+    + /datasets/train.json
+    + /datasets/test.json
++ train
+    + modify configuretion files
+        + ./config/train_config.yaml
+          dataset: path_to_train.json  
+             --> dataset: /Users/.../competition_NIPA_AI_2022/datasets/ # absolute path
+    + python ./train.py 
+    
++ predict
+    + modify configuretion files
+        + ./config/predict_config.yaml
+          dataset: path_to_test.json_and_sample_submission  
+             --> dataset: /Users/.../competition_NIPA_AI_2022/datasets/ # absolute path
+          train_serial: "YYYYMMDD_SERIAL"
+            --> train_serial: "20220612_115012"     # ./results/train/20220612_115012/
+    + python ./predict.py 
 
-http://aiopen.etri.re.kr/aidata_download.php
++ submission
+    + copy and rename
+        + copy ./predict/20220612_115012/prediction.csv
+        + rename prediction.csv to submission.csv
