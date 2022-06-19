@@ -132,3 +132,4 @@ korBert/
 *.zip
 datasets/*.pt
 models/baseline/**/*.yml
+models/baseline/results/train/*/model.pt
