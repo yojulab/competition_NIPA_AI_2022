@@ -5,6 +5,7 @@
 
 ### 사용 설명서 
 + 주 코드 폴더 : ./models/baseline
++ 주 deeplearning Platform : pytorch 1.9
 + dataset
     + /datasets/train.json
     + /datasets/test.json
@@ -14,6 +15,8 @@
           dataset: path_to_train.json  
              --> dataset: /Users/.../competition_NIPA_AI_2022/datasets/ # absolute path
     + python ./train.py 
+    + take time : 2 days 13 hours
+    + result folder : ./models/baseline/result/train
     
 + predict
     + modify configuretion files
@@ -23,6 +26,7 @@
           train_serial: "YYYYMMDD_SERIAL"
             --> train_serial: "20220612_115012"     # ./results/train/20220612_115012/
     + python ./predict.py 
+    + result folder : ./models/baseline/result/predict/*
 
 + submission
     + copy and rename
